@@ -37,6 +37,7 @@ jobs:
           }
 
      
+      
       - name: Log in to Docker Hub
         shell: powershell
         env:
@@ -51,8 +52,8 @@ jobs:
           }
 
           $token = $env:DOCKERHUB_TOKEN.Trim()
-          $token | docker login --username $env:DOCKERHUB_USERNAME --password-stdin
+          $token | docker login --username "$env:DOCKERHUB_USERNAME" --password-stdin
 
           if ($LASTEXITCODE -ne 0) {
-            throw "Docker Hub login failed. Check the username, token, and token permissions."
+            throw "Docker Hub login failed. Verify the username and access token."
           }
