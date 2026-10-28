@@ -1,23 +1,58 @@
 
-name: CI/CD Docker Pipeline
+name: Ionic Vue Docker CI/CD
 
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
-  test-runner:
+  build-and-push:
     runs-on: [self-hosted, Windows, X64]
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Verify runner
+      - name: Verify Docker
         shell: powershell
         run: |
-          Write-Host "GitHub Actions runner is working!"
-          git --version
-          docker --version
+          docker version
+          if ($LASTEXITCODE -ne 0) {
+            throw "Docker is unavailable"
+          }
+
+      - name: Log in to Docker Hub
+        shell: powershell
+        env:
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+        run: |
+          $env:DOCKERHUB_TOKEN | docker login --username $env:DOCKERHUB_USERNAME --password-stdin
+          if ($LASTEXITCODE -ne 0) {
+            throw "Docker Hub login failed"
+          }
+
+      - name: Build Docker image
+        shell: powershell
+        env:
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+        run: |
+          docker build -t "${env:DOCKERHUB_USERNAME}/ionic-vue-app:latest" .
+          if ($LASTEXITCODE -ne 0) {
+            throw "Docker build failed"
+          }
+
+      - name: Push Docker image
+        shell: powershell
+        env:
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+        run: |
+          docker push "${env:DOCKERHUB_USERNAME}/ionic-vue-app:latest"
+          if ($LASTEXITCODE -ne 0) {
+            throw "Docker push failed"
+          }
