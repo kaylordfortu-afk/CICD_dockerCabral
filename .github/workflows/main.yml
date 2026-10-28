@@ -36,22 +36,23 @@ jobs:
             throw "Docker Hub login failed"
           }
 
-      - name: Build Docker image
+     
+      - name: Log in to Docker Hub
         shell: powershell
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
         run: |
-          docker build -t "${env:DOCKERHUB_USERNAME}/ionic-vue-app:latest" .
-          if ($LASTEXITCODE -ne 0) {
-            throw "Docker build failed"
+          if ([string]::IsNullOrWhiteSpace($env:DOCKERHUB_USERNAME)) {
+            throw "DOCKERHUB_USERNAME secret is missing"
+          }
+          if ([string]::IsNullOrWhiteSpace($env:DOCKERHUB_TOKEN)) {
+            throw "DOCKERHUB_TOKEN secret is missing"
           }
 
-      - name: Push Docker image
-        shell: powershell
-        env:
-          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-        run: |
-          docker push "${env:DOCKERHUB_USERNAME}/ionic-vue-app:latest"
+          $token = $env:DOCKERHUB_TOKEN.Trim()
+          $token | docker login --username $env:DOCKERHUB_USERNAME --password-stdin
+
           if ($LASTEXITCODE -ne 0) {
-            throw "Docker push failed"
+            throw "Docker Hub login failed. Check the username, token, and token permissions."
           }
