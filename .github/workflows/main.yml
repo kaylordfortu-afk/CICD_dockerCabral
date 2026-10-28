@@ -38,6 +38,7 @@ jobs:
 
      
       
+     
       - name: Log in to Docker Hub
         shell: powershell
         env:
@@ -45,15 +46,15 @@ jobs:
           DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
         run: |
           if ([string]::IsNullOrWhiteSpace($env:DOCKERHUB_USERNAME)) {
-            throw "DOCKERHUB_USERNAME secret is missing"
+            throw "DOCKERHUB_USERNAME is missing"
           }
           if ([string]::IsNullOrWhiteSpace($env:DOCKERHUB_TOKEN)) {
-            throw "DOCKERHUB_TOKEN secret is missing"
+            throw "DOCKERHUB_TOKEN is missing"
           }
 
           $token = $env:DOCKERHUB_TOKEN.Trim()
-          $token | docker login --username "$env:DOCKERHUB_USERNAME" --password-stdin
+          $token | & docker login --username $env:DOCKERHUB_USERNAME --password-stdin
 
           if ($LASTEXITCODE -ne 0) {
-            throw "Docker Hub login failed. Verify the username and access token."
+            throw "Docker Hub login failed"
           }
