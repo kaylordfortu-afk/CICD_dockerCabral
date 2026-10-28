@@ -1,0 +1,23 @@
+
+name: CI/CD Docker Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test-runner:
+    runs-on: [self-hosted, Windows, X64]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify runner
+        shell: powershell
+        run: |
+          Write-Host "GitHub Actions runner is working!"
+          git --version
+          docker --version
