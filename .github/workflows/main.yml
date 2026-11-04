@@ -4,49 +4,43 @@ on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
-  build-and-deploy:
+  build-and-push:
     runs-on: [self-hosted, Windows, X64]
 
     steps:
-      # 1. Get the latest source code
-      - name: Checkout Repository
+      - name: Checkout latest code
         uses: actions/checkout@v4
 
-      # 2. Check Docker installation
-      - name: Check Docker
-        run: docker --version
+      - name: Build Ionic Image
+        run: docker build -t ionic-vue-app:latest .
 
-      # 3. Build the Ionic Vue application image
-      - name: Build Docker Image
-        run: docker build -t cedricbakin06/ionic-vue-firebase-crud:latest .
+      - name: Remove previous container
+        run: docker rm -f ionic-vue-app
+        continue-on-error: true
 
-      # 4. Push image to Docker Hub
-      - name: Push Docker Image
-        run: docker push cedricbakin06/ionic-vue-firebase-crud:latest
+      - name: Start updated container
+        run: docker run -d --name ionic-vue-app -p 8080:8080 ionic-vue-app:latest
 
-      # 5. Stop and remove the previous container
-      - name: Stop Existing Container
+      - name: Verify app
         shell: powershell
         run: |
-          $container = docker ps -aq --filter "name=^ionic-vue-app$"
-
-          if ($container) {
-            docker stop ionic-vue-app
-            docker rm ionic-vue-app
+          $Success = $false
+          for ($i = 0; $i -le 15; $i++) {
+            try {
+              Invoke-WebRequest http://localhost:8080 -UseBasicParsing -TimeoutSec 2 | Out-Null
+              $Success = $true
+              break
+            } catch {
+              Start-Sleep -Seconds 2
+            }
           }
-
-      # 6. Download the latest image
-      - name: Pull Latest Docker Image
-        run: docker pull cedricbakin06/ionic-vue-firebase-crud:latest
-
-      # 7. Run the updated container
-      - name: Run Updated Container
-        run: docker run -d -p 8080:80 --name ionic-vue-app --restart unless-stopped cedricbakin06/ionic-vue-firebase-crud:latest
-
-      # 8. Verify running container
-      - name: Verify Deployment
-        run: docker ps
+          if (-not $Success) {
+            docker logs ionic-vue-app
+            exit 1
+          }
