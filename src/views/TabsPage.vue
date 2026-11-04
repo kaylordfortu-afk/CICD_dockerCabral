@@ -5,7 +5,8 @@
       <ion-tab-bar slot="bottom">
         <ion-tab-button tab="create" href="/tabs/create">
           <ion-icon :icon="addCircleOutline" />
-          <ion-label>Create</ion-label>
+          <ion-label>Create updated
+          </ion-label>
         </ion-tab-button>
         <ion-tab-button tab="read" href="/tabs/read">
           <ion-icon :icon="peopleOutline" />
