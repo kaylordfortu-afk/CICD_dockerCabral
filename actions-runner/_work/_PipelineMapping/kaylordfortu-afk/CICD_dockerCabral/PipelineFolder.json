@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "kaylordfortu-afk/CICD_dockerCabral",
+  "pipelineDirectory": "CICD_dockerCabral",
+  "workspaceDirectory": "CICD_dockerCabral\\CICD_dockerCabral",
+  "repositories": {
+    "kaylordfortu-afk/CICD_dockerCabral": {
+      "repositoryPath": "CICD_dockerCabral\\CICD_dockerCabral",
+      "lastRunOn": "11/05/2026 12:48:38 +08:00"
+    }
+  },
+  "lastRunOn": "11/05/2026 12:55:12 +08:00"
+}

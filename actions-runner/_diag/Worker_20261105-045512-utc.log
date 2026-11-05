@@ -1,0 +1,3838 @@
+[2026-11-05 04:55:12Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known config file 'Runner': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.runner'
+[2026-11-05 04:55:12Z INFO Worker] Version: 2.338.2
+[2026-11-05 04:55:12Z INFO Worker] Commit: d1eb12d4b115c301201de27d667284e1a80f2ab5
+[2026-11-05 04:55:12Z INFO Worker] Culture: en-PH
+[2026-11-05 04:55:12Z INFO Worker] UI Culture: en-US
+[2026-11-05 04:55:12Z INFO Worker] Waiting to receive the job message from the channel.
+[2026-11-05 04:55:12Z INFO ProcessChannel] Receiving message of length 25239, with hash '48fb26dcc8941f25580fd486fa3366b3b38bd29a89d086e49061d1ce60e9f152'
+[2026-11-05 04:55:12Z INFO Worker] Message received.
+[2026-11-05 04:55:12Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/main.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v4",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 17,
+        "col": 15,
+        "lit": "Checkout repository"
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "3d292b91-f414-40c3-af8f-779646e10049",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 20,
+        "col": 15,
+        "lit": "Verify Docker"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 22,
+              "col": 14,
+              "lit": "docker version\nif ($LASTEXITCODE -ne 0) {\n  throw \"Docker is unavailable\"\n}\n"
+            }
+          },
+          {
+            "key": "shell",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 21,
+              "col": 16,
+              "lit": "powershell"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "5483985d-f1fe-42b9-ae70-867d140d1b92",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 28,
+        "col": 15,
+        "lit": "Log in to Docker Hub"
+      },
+      "contextName": "__run_2",
+      "environment": {
+        "type": 2,
+        "file": 1,
+        "line": 31,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 31,
+              "col": 11,
+              "lit": "DOCKERHUB_USERNAME"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 31,
+              "col": 31,
+              "expr": "secrets.DOCKERHUB_USERNAME"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 32,
+              "col": 11,
+              "lit": "DOCKERHUB_TOKEN"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 32,
+              "col": 28,
+              "expr": "secrets.DOCKERHUB_TOKEN"
+            }
+          }
+        ]
+      },
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 33,
+              "col": 14,
+              "lit": "$env:DOCKERHUB_TOKEN | docker login --username $env:DOCKERHUB_USERNAME --password-stdin\nif ($LASTEXITCODE -ne 0) {\n  throw \"Docker Hub login failed\"\n}\n"
+            }
+          },
+          {
+            "key": "shell",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 29,
+              "col": 16,
+              "lit": "powershell"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "2e86b7b8-6469-4be0-9a7c-4f9bc48ab548",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 42,
+        "col": 15,
+        "lit": "Diagnose Docker Hub secrets"
+      },
+      "contextName": "__run_3",
+      "environment": {
+        "type": 2,
+        "file": 1,
+        "line": 45,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 45,
+              "col": 11,
+              "lit": "DOCKERHUB_USERNAME"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 45,
+              "col": 31,
+              "expr": "secrets.DOCKERHUB_USERNAME"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 46,
+              "col": 11,
+              "lit": "DOCKERHUB_TOKEN"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 46,
+              "col": 28,
+              "expr": "secrets.DOCKERHUB_TOKEN"
+            }
+          }
+        ]
+      },
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 47,
+              "col": 14,
+              "lit": "Write-Host \"Username secret present: $(-not [string]::IsNullOrWhiteSpace($env:DOCKERHUB_USERNAME))\"\nWrite-Host \"Token secret present: $(-not [string]::IsNullOrWhiteSpace($env:DOCKERHUB_TOKEN))\"\nWrite-Host \"Docker executable:\"\nGet-Command docker | Select-Object -ExpandProperty Source\n\nif ([string]::IsNullOrWhiteSpace($env:DOCKERHUB_USERNAME)) {\n  throw \"Username secret is missing\"\n}\n\nif ([string]::IsNullOrWhiteSpace($env:DOCKERHUB_TOKEN)) {\n  throw \"Token secret is missing\"\n}\n"
+            }
+          },
+          {
+            "key": "shell",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 43,
+              "col": 16,
+              "lit": "powershell"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "ca31c286-2a83-4105-b12b-0e4e5a444ec1",
+      "name": "__run_3"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DOCKERHUB_TOKEN": {
+      "value": "***",
+      "isSecret": true
+    },
+    "DOCKERHUB_USERNAME": {
+      "value": "***",
+      "isSecret": true
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions.runner.requirenode24": {
+      "value": "true"
+    },
+    "actions.runner.usenode24bydefault": {
+      "value": "true"
+    },
+    "actions.runner.warnonnode20": {
+      "value": "true"
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "true"
+    },
+    "actions_batch_action_resolution": {
+      "value": "false"
+    },
+    "actions_cache_mode": {
+      "value": "write"
+    },
+    "actions_container_action_runner_temp": {
+      "value": "true"
+    },
+    "actions_display_helpful_actions_download_errors": {
+      "value": "true"
+    },
+    "actions_runner_allow_artifacts_file": {
+      "value": "true"
+    },
+    "actions_runner_compare_workflow_parser": {
+      "value": "false"
+    },
+    "actions_runner_deprecate_linux_arm32": {
+      "value": "true"
+    },
+    "actions_runner_emit_composite_markers": {
+      "value": "true"
+    },
+    "actions_runner_kill_linux_arm32": {
+      "value": "true"
+    },
+    "actions_runner_node20_removal_date": {
+      "value": "September 23rd, 2026"
+    },
+    "actions_runner_node24_default_date": {
+      "value": "June 16th, 2026"
+    },
+    "actions_self_repository": {
+      "value": "true"
+    },
+    "actions_service_container_command": {
+      "value": "true"
+    },
+    "actions_set_orchestration_id_env_for_actions": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_snapshot_preflight_hosted_runner_check": {
+      "value": "false"
+    },
+    "actions_snapshot_preflight_image_gen_pool_check": {
+      "value": "false"
+    },
+    "actions_use_bearer_token_for_codeload": {
+      "value": "false"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "build-and-push"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "add85be7-4675-8841-b98c-2c02d08df88b.build-and-push.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "build-and-push"
+    },
+    "system.runner.brokerwebsocketprobeurl": {
+      "value": "wss://broker.actions.githubusercontent.com/_ws/ping.sock"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "add85be7-4675-8841-b98c-2c02d08df88b",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "add85be7-4675-8841-b98c-2c02d08df88b",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "9b6b3055-6f15-53fb-9063-78ca630d75aa",
+  "jobDisplayName": "build-and-push",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/T9gQD0gG7AGumaZDeO5am16gyhj5D3cqQI0y80a1SDgZMn5e4z/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus26.actions.githubusercontent.com/T9gQD0gG7AGumaZDeO5am16gyhj5D3cqQI0y80a1SDgZMn5e4z/",
+          "GenerateIdTokenUrl": "",
+          "ConnectivityChecks": "[\"https://broker.actions.githubusercontent.com/health\",\"https://token.actions.githubusercontent.com/ready\",\"https://run.actions.githubusercontent.com/health\"]",
+          "ConnectivityAndDNSChecks": ""
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-1-azure-eastus.actions.githubusercontent.com/105/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/master"
+        },
+        {
+          "k": "sha",
+          "v": "6488f721c3d6d8367a0d2110e318d707d661652b"
+        },
+        {
+          "k": "repository",
+          "v": "kaylordfortu-afk/CICD_dockerCabral"
+        },
+        {
+          "k": "repository_owner",
+          "v": "kaylordfortu-afk"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "232198565"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/kaylordfortu-afk/CICD_dockerCabral.git"
+        },
+        {
+          "k": "run_id",
+          "v": "41966568585"
+        },
+        {
+          "k": "run_number",
+          "v": "19"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "3"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "111693176"
+        },
+        {
+          "k": "actor",
+          "v": "Diyan19"
+        },
+        {
+          "k": "workflow",
+          "v": "Ionic Vue Docker CI/CD"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "master"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "6488f721c3d6d8367a0d2110e318d707d661652b"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "f551f4724b80398f6c6d86b020513dd46367b84b"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "akosiadrianboy@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Adrian Largo"
+                              },
+                              {
+                                "k": "username",
+                                "v": "Diyan19"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "akosiadrianboy@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Adrian Largo"
+                              },
+                              {
+                                "k": "username",
+                                "v": "Diyan19"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "6488f721c3d6d8367a0d2110e318d707d661652b"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Add User V3"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2026-11-05T12:14:04+08:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "43133d320cc0fecb4d02b024cc5c116558fa04f6"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/kaylordfortu-afk/CICD_dockerCabral/commit/6488f721c3d6d8367a0d2110e318d707d661652b"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/kaylordfortu-afk/CICD_dockerCabral/compare/f551f4724b80...6488f721c3d6"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "akosiadrianboy@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Adrian Largo"
+                          },
+                          {
+                            "k": "username",
+                            "v": "Diyan19"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "akosiadrianboy@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Adrian Largo"
+                          },
+                          {
+                            "k": "username",
+                            "v": "Diyan19"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "6488f721c3d6d8367a0d2110e318d707d661652b"
+                    },
+                    {
+                      "k": "message",
+                      "v": "Add User V3"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2026-11-05T12:14:04+08:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "43133d320cc0fecb4d02b024cc5c116558fa04f6"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/kaylordfortu-afk/CICD_dockerCabral/commit/6488f721c3d6d8367a0d2110e318d707d661652b"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "111693176+Diyan19@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "Diyan19"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/master"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/kaylordfortu-afk/CICD_dockerCabral.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1793118994.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "master"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "kaylordfortu-afk/CICD_dockerCabral"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/kaylordfortu-afk/CICD_dockerCabral.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pull_requests",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/kaylordfortu-afk/CICD_dockerCabral"
+                    },
+                    {
+                      "k": "id",
+                      "v": 1436000986.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "Vue"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "master"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "CICD_dockerCabral"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOVZei2g"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/232198565?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "kaylordfortu@gmail.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/kaylordfortu-afk/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/kaylordfortu-afk/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/kaylordfortu-afk/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/kaylordfortu-afk/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/kaylordfortu-afk"
+                          },
+                          {
+                            "k": "id",
+                            "v": 232198565.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "kaylordfortu-afk"
+                          },
+                          {
+                            "k": "name",
+                            "v": "kaylordfortu-afk"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDODdcRpQ"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/kaylordfortu-afk/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/kaylordfortu-afk/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/kaylordfortu-afk/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/kaylordfortu-afk/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/kaylordfortu-afk/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/kaylordfortu-afk"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pull_request_creation_policy",
+                      "v": "all"
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1793852068.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 237598.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:kaylordfortu-afk/CICD_dockerCabral.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/kaylordfortu-afk/CICD_dockerCabral"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2026-11-05T04:10:08Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/kaylordfortu-afk/CICD_dockerCabral"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/111693176?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/Diyan19/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/Diyan19/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/Diyan19/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/Diyan19/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/Diyan19"
+                    },
+                    {
+                      "k": "id",
+                      "v": 111693176.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "Diyan19"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOBqhNeA"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/Diyan19/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/Diyan19/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/Diyan19/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/Diyan19/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/Diyan19/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/Diyan19"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "kaylordfortu-afk/CICD_dockerCabral/.github/workflows/main.yml@refs/heads/master"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "6488f721c3d6d8367a0d2110e318d707d661652b"
+        },
+        {
+          "k": "repository_id",
+          "v": "1436000986"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "kaylordfortu-afk"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "job": {
+      "t": 2,
+      "d": [
+        {
+          "k": "check_run_id",
+          "v": 127058093996.0
+        },
+        {
+          "k": "workflow_ref",
+          "v": "kaylordfortu-afk/CICD_dockerCabral/.github/workflows/main.yml@refs/heads/master"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "6488f721c3d6d8367a0d2110e318d707d661652b"
+        },
+        {
+          "k": "workflow_repository",
+          "v": "kaylordfortu-afk/CICD_dockerCabral"
+        },
+        {
+          "k": "workflow_file_path",
+          "v": ".github/workflows/main.yml"
+        }
+      ]
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDODdcRpQ"
+}
+[2026-11-05 04:55:12Z INFO JobRunner] Job ID 9b6b3055-6f15-53fb-9063-78ca630d75aa
+[2026-11-05 04:55:12Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin\Runner.Worker.dll
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO ConfigurationStore] binPath: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO ConfigurationStore] RootFolder: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known config file 'Runner': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.runner'
+[2026-11-05 04:55:12Z INFO ConfigurationStore] ConfigFilePath: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.runner
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.runner_migrated'
+[2026-11-05 04:55:12Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.runner_migrated
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials'
+[2026-11-05 04:55:12Z INFO ConfigurationStore] CredFilePath: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_migrated'
+[2026-11-05 04:55:12Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_migrated
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known config file 'Service': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.service'
+[2026-11-05 04:55:12Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.service
+[2026-11-05 04:55:12Z INFO ConfigurationStore] Read setting file: 414 chars
+[2026-11-05 04:55:12Z INFO JobRunner] Initializing launch client
+[2026-11-05 04:55:12Z INFO JobServerQueue] Initializing results client
+[2026-11-05 04:55:12Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2026-11-05 04:55:12Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2026-11-05 04:55:12Z INFO JobServerQueue] Start process web console line queue.
+[2026-11-05 04:55:12Z INFO JobServerQueue] Start process file upload queue.
+[2026-11-05 04:55:12Z INFO JobServerQueue] Start results file upload queue.
+[2026-11-05 04:55:12Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-11-05 04:55:12Z INFO JobServerQueue] Start process timeline update queue.
+[2026-11-05 04:55:12Z INFO ExecutionContext] Initializing Job context
+[2026-11-05 04:55:12Z INFO ExecutionContext] Initialize GitHub context
+[2026-11-05 04:55:12Z INFO ExecutionContext] Initialize Env context
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:12Z INFO JobRunner] Starting the job execution context.
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:12Z INFO JobRunner] Validating directory permissions for: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Tools': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_tool'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Temp': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp'
+[2026-11-05 04:55:12Z INFO JobRunner] Getting job extension.
+[2026-11-05 04:55:12Z INFO JobRunner] Initialize job. Getting all job steps.
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known config file 'SetupInfo': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.setup_info'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:12Z INFO PipelineDirectoryManager] Loading tracking config if exists: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_PipelineMapping\kaylordfortu-afk/CICD_dockerCabral\PipelineFolder.json
+[2026-11-05 04:55:12Z INFO PipelineDirectoryManager] Updating job run properties.
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:12Z INFO JobExtension] Downloading actions
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:12Z INFO HostContext] Well known directory 'Actions': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions'
+[2026-11-05 04:55:13Z INFO Worker] Listening for cancel message from the channel.
+[2026-11-05 04:55:13Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2026-11-05 04:55:13Z INFO ResultServer] Successfully started websocket client.
+[2026-11-05 04:55:14Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9f9c9a9c-7f7e-4171-acb8-6c55ef36b149', success rate: 1/1.
+[2026-11-05 04:55:14Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2026-11-05 04:55:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:15Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:15Z INFO HostContext] Well known directory 'Actions': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions'
+[2026-11-05 04:55:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:15Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:15Z INFO HostContext] Well known directory 'Actions': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions'
+[2026-11-05 04:55:15Z INFO ActionManager] Save archive 'https://codeload.github.com/actions/checkout/zip/11d5960a326750d5838078e36cf38b85af677262' into C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions\_temp_6529927a-7b49-432c-92e1-3a3b11940baa\98aa52e8-6044-4853-acd1-c42e00a225fa.zip.
+[2026-11-05 04:55:15Z INFO ActionManager] Using Basic token for action archive download.
+[2026-11-05 04:55:15Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9f9c9a9c-7f7e-4171-acb8-6c55ef36b149', success rate: 1/1.
+[2026-11-05 04:55:18Z INFO ActionManager] Request URL: https://codeload.github.com/actions/checkout/zip/11d5960a326750d5838078e36cf38b85af677262 X-GitHub-Request-Id: 3BAC:19A550:61ADB:C6707:6AEC0C34 Http Status: OK
+[2026-11-05 04:55:19Z INFO ActionManager] Finished getting action repository.
+[2026-11-05 04:55:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:19Z INFO HostContext] Well known directory 'Actions': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions'
+[2026-11-05 04:55:19Z INFO ActionManifestManagerLegacy] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2026-11-05 04:55:19Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2026-11-05 04:55:19Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:19Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:19Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:19Z INFO HostContext] Well known directory 'Actions': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions'
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 101,
+          "col": 3,
+          "lit": "allow-unsafe-pr-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 109,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-11-05 04:55:20Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Actions': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions'
+[2026-11-05 04:55:20Z INFO ActionManager] Load action that reference repository from 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions\actions\checkout\v4'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Actions': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions'
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 101,
+          "col": 3,
+          "lit": "allow-unsafe-pr-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 109,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-11-05 04:55:20Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-11-05 04:55:20Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-11-05 04:55:20Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-11-05 04:55:20Z INFO JobExtension] Adding .
+[2026-11-05 04:55:20Z INFO JobExtension] Adding .
+[2026-11-05 04:55:20Z INFO JobExtension] Adding .
+[2026-11-05 04:55:20Z INFO JobExtension] Adding .
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:20Z INFO JobExtension] Total accessible running process: 377.
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:20Z INFO JobExtension] Start checking server connectivity.
+[2026-11-05 04:55:20Z INFO JobExtension] Check server connectivity for https://broker.actions.githubusercontent.com/health.
+[2026-11-05 04:55:20Z INFO JobExtension] Check server connectivity for https://token.actions.githubusercontent.com/ready.
+[2026-11-05 04:55:20Z INFO JobExtension] Check server connectivity for https://run.actions.githubusercontent.com/health.
+[2026-11-05 04:55:20Z INFO JobExtension] Start checking service connectivity in background.
+[2026-11-05 04:55:20Z INFO JobExtension] Start checking runner websocket connectivity in background.
+[2026-11-05 04:55:20Z INFO BrokerServer] Attempting to start runner websocket client.
+[2026-11-05 04:55:20Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "9f9c9a9c-7f7e-4171-acb8-6c55ef36b149",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 8,
+  "startTime": "2026-11-05T04:55:12.8450655Z",
+  "finishTime": "2026-11-05T04:55:20.2539618Z"
+}.
+[2026-11-05 04:55:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9f9c9a9c-7f7e-4171-acb8-6c55ef36b149', success rate: 1/1.
+[2026-11-05 04:55:20Z INFO JobRunner] Total job steps: 4.
+[2026-11-05 04:55:20Z INFO JobRunner] Run all job steps.
+[2026-11-05 04:55:20Z INFO DapDebugger] DapDebugger initialized
+[2026-11-05 04:55:20Z INFO StepsRunner] Processing step: DisplayName='Checkout repository'
+[2026-11-05 04:55:20Z INFO StepsRunner] Evaluating: success()
+[2026-11-05 04:55:20Z INFO StepsRunner] Result: true
+[2026-11-05 04:55:20Z INFO StepsRunner] Starting the step.
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:20Z INFO StepsRunner] Which2: 'chcp'
+[2026-11-05 04:55:20Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper] Starting process:
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper] Process started with process id 17888, waiting for process exit.
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper] Finished process 17888 with exit code 0, and elapsed time 00:00:00.0506293.
+[2026-11-05 04:55:20Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Actions': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions'
+[2026-11-05 04:55:20Z INFO ActionManager] Load action that reference repository from 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions\actions\checkout\v4'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Actions': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions'
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 101,
+          "col": 3,
+          "lit": "allow-unsafe-pr-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 109,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-11-05 04:55:20Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-11-05 04:55:20Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-11-05 04:55:20Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-11-05 04:55:20Z INFO ExecutionContext] Reserve record order 6 to 10 for post job actions.
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Temp': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp'
+[2026-11-05 04:55:20Z INFO ExecutionContext] Write event payload to C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_github_workflow\event.json
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Temp': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp'
+[2026-11-05 04:55:20Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateArtifactsFileCommand, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ArtifactsListFileCommand, Runner.Worker
+[2026-11-05 04:55:20Z INFO ArtifactsListFileCommand] Wrote $GITHUB_ARTIFACTS_LIST with 0 subject(s) to 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_runner_file_commands\artifacts_list_5f248797-37fe-4480-9012-6c86d82db7bf'
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "kaylordfortu-afk/CICD_dockerCabral"
+}
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'ref': default value evaluate result: ""
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'ssh-key': default value evaluate result: ""
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'ssh-known-hosts': default value evaluate result: ""
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'ssh-user': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 51,
+  "col": 14,
+  "lit": "git"
+}
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 54,
+  "col": 14,
+  "lit": "true"
+}
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'path': default value evaluate result: ""
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 59,
+  "col": 14,
+  "lit": "true"
+}
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": ""
+}
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": ""
+}
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 76,
+  "col": 14,
+  "lit": "1"
+}
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 79,
+  "col": 14,
+  "lit": "false"
+}
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "true"
+}
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "false"
+}
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 94,
+  "col": 14,
+  "lit": "false"
+}
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 97,
+  "col": 14,
+  "lit": "true"
+}
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'github-server-url': default value evaluate result: ""
+[2026-11-05 04:55:20Z INFO ActionManifestManagerLegacy] Input 'allow-unsafe-pr-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 109,
+  "col": 14,
+  "lit": "false"
+}
+[2026-11-05 04:55:20Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2026-11-05 04:55:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2026-11-05 04:55:20Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-11-05 04:55:20Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-11-05 04:55:20Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-11-05 04:55:20Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-11-05 04:55:20Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-11-05 04:55:20Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-11-05 04:55:20Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-11-05 04:55:20Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-11-05 04:55:20Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-11-05 04:55:20Z INFO ActionCommandManager] Register action command extension for command error
+[2026-11-05 04:55:20Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-11-05 04:55:20Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-11-05 04:55:20Z INFO ActionCommandManager] Register action command extension for command group
+[2026-11-05 04:55:20Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-11-05 04:55:20Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:20Z INFO HostContext] Well known directory 'Externals': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\externals'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper] Starting process:
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\externals\node24\bin\node.exe'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\CICD_dockerCabral\CICD_dockerCabral'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-11-05 04:55:20Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-11-05 04:55:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:20Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-11-05 04:55:20Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag\blocks\add85be7-4675-8841-b98c-2c02d08df88b_9f9c9a9c-7f7e-4171-acb8-6c55ef36b149.1
+[2026-11-05 04:55:20Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-11-05 04:55:21Z ERR  GitHubActionsService] GET request to wss://broker.actions.githubusercontent.com/_ws/ping.sock failed. HTTP Status: SwitchingProtocols
+[2026-11-05 04:55:21Z INFO BrokerServer] Successfully started runner websocket client.
+[2026-11-05 04:55:24Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-11-05 04:55:24Z INFO ProcessInvokerWrapper] Process started with process id 31220, waiting for process exit.
+[2026-11-05 04:55:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:25Z INFO AddMaskCommandExtension] Add new secret mask with length of 524
+[2026-11-05 04:55:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:30Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:40Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper] Finished process 31220 with exit code 0, and elapsed time 00:00:20.8866669.
+[2026-11-05 04:55:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d292b91-f414-40c3-af8f-779646e10049', success rate: 1/1.
+[2026-11-05 04:55:41Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_runner_file_commands\step_summary_5f248797-37fe-4480-9012-6c86d82db7bf) is empty; skipping attachment upload
+[2026-11-05 04:55:41Z INFO CreateArtifactsFileCommand] Processing $GITHUB_ARTIFACTS file 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_runner_file_commands\artifacts_5f248797-37fe-4480-9012-6c86d82db7bf'
+[2026-11-05 04:55:41Z INFO CreateArtifactsFileCommand] $GITHUB_ARTIFACTS file is empty; nothing to process.
+[2026-11-05 04:55:41Z INFO StepsRunner] Step result: 
+[2026-11-05 04:55:41Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node24",
+  "stage": "Main",
+  "stepId": "3d292b91-f414-40c3-af8f-779646e10049",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 22,
+  "startTime": "2026-11-05T04:55:20.3239186Z",
+  "finishTime": "2026-11-05T04:55:41.6032588Z"
+}.
+[2026-11-05 04:55:41Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-11-05 04:55:41Z INFO StepsRunner] Current state: job state = ''
+[2026-11-05 04:55:41Z INFO StepsRunner] Processing step: DisplayName='Verify Docker'
+[2026-11-05 04:55:41Z INFO StepsRunner] Evaluating: success()
+[2026-11-05 04:55:41Z INFO StepsRunner] Result: true
+[2026-11-05 04:55:41Z INFO StepsRunner] Starting the step.
+[2026-11-05 04:55:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:41Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:41Z INFO StepsRunner] Which2: 'chcp'
+[2026-11-05 04:55:41Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper] Starting process:
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper] Process started with process id 7396, waiting for process exit.
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper] Finished process 7396 with exit code 0, and elapsed time 00:00:00.0502944.
+[2026-11-05 04:55:41Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-11-05 04:55:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:41Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:41Z INFO HostContext] Well known directory 'Temp': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp'
+[2026-11-05 04:55:41Z INFO ExecutionContext] Write event payload to C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_github_workflow\event.json
+[2026-11-05 04:55:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:41Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:41Z INFO HostContext] Well known directory 'Temp': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp'
+[2026-11-05 04:55:41Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-11-05 04:55:41Z INFO ArtifactsListFileCommand] Wrote $GITHUB_ARTIFACTS_LIST with 0 subject(s) to 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_runner_file_commands\artifacts_list_8ff28d37-df09-4df8-9146-07eb7e2c1969'
+[2026-11-05 04:55:41Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-11-05 04:55:41Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-11-05 04:55:41Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-11-05 04:55:41Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-11-05 04:55:41Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-11-05 04:55:41Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-11-05 04:55:41Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-11-05 04:55:41Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-11-05 04:55:41Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-11-05 04:55:41Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-11-05 04:55:41Z INFO ActionCommandManager] Register action command extension for command error
+[2026-11-05 04:55:41Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-11-05 04:55:41Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-11-05 04:55:41Z INFO ActionCommandManager] Register action command extension for command group
+[2026-11-05 04:55:41Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-11-05 04:55:41Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-11-05 04:55:41Z INFO ScriptHandler] Which2: 'powershell'
+[2026-11-05 04:55:41Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-11-05 04:55:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:41Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:41Z INFO HostContext] Well known directory 'Temp': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp'
+[2026-11-05 04:55:41Z INFO ScriptHandler] Which2: 'powershell'
+[2026-11-05 04:55:41Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper] Starting process:
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\a195524b-fcdc-4771-b92b-6a4871a04d49.ps1'"'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\CICD_dockerCabral\CICD_dockerCabral'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-11-05 04:55:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5483985d-f1fe-42b9-ae70-867d140d1b92', success rate: 1/1.
+[2026-11-05 04:55:41Z INFO ProcessInvokerWrapper] Process started with process id 21668, waiting for process exit.
+[2026-11-05 04:55:42Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-11-05 04:55:42Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-11-05 04:55:42Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag\blocks\add85be7-4675-8841-b98c-2c02d08df88b_3d292b91-f414-40c3-af8f-779646e10049.1
+[2026-11-05 04:55:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5483985d-f1fe-42b9-ae70-867d140d1b92', success rate: 1/1.
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper] Finished process 21668 with exit code 0, and elapsed time 00:00:01.3854853.
+[2026-11-05 04:55:43Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_runner_file_commands\step_summary_8ff28d37-df09-4df8-9146-07eb7e2c1969) is empty; skipping attachment upload
+[2026-11-05 04:55:43Z INFO CreateArtifactsFileCommand] Processing $GITHUB_ARTIFACTS file 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_runner_file_commands\artifacts_8ff28d37-df09-4df8-9146-07eb7e2c1969'
+[2026-11-05 04:55:43Z INFO CreateArtifactsFileCommand] $GITHUB_ARTIFACTS file is empty; nothing to process.
+[2026-11-05 04:55:43Z INFO StepsRunner] Step result: 
+[2026-11-05 04:55:43Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "5483985d-f1fe-42b9-ae70-867d140d1b92",
+  "stepContextName": "__run",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2026-11-05T04:55:41.6104294Z",
+  "finishTime": "2026-11-05T04:55:43.1830798Z"
+}.
+[2026-11-05 04:55:43Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-11-05 04:55:43Z INFO StepsRunner] Current state: job state = ''
+[2026-11-05 04:55:43Z INFO StepsRunner] Processing step: DisplayName='Log in to Docker Hub'
+[2026-11-05 04:55:43Z INFO StepsRunner] Evaluating: success()
+[2026-11-05 04:55:43Z INFO StepsRunner] Result: true
+[2026-11-05 04:55:43Z INFO StepsRunner] Starting the step.
+[2026-11-05 04:55:43Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:43Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:43Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:43Z INFO StepsRunner] Which2: 'chcp'
+[2026-11-05 04:55:43Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper] Starting process:
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper] Process started with process id 25664, waiting for process exit.
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper] Finished process 25664 with exit code 0, and elapsed time 00:00:00.0321956.
+[2026-11-05 04:55:43Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-11-05 04:55:43Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:43Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:43Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:43Z INFO HostContext] Well known directory 'Temp': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp'
+[2026-11-05 04:55:43Z INFO ExecutionContext] Write event payload to C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_github_workflow\event.json
+[2026-11-05 04:55:43Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:43Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:43Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:43Z INFO HostContext] Well known directory 'Temp': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp'
+[2026-11-05 04:55:43Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-11-05 04:55:43Z INFO ArtifactsListFileCommand] Wrote $GITHUB_ARTIFACTS_LIST with 0 subject(s) to 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_runner_file_commands\artifacts_list_b06c1a7d-3b8b-42cf-86bc-b6e0ff800c0e'
+[2026-11-05 04:55:43Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-11-05 04:55:43Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-11-05 04:55:43Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-11-05 04:55:43Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-11-05 04:55:43Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-11-05 04:55:43Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-11-05 04:55:43Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-11-05 04:55:43Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-11-05 04:55:43Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-11-05 04:55:43Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-11-05 04:55:43Z INFO ActionCommandManager] Register action command extension for command error
+[2026-11-05 04:55:43Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-11-05 04:55:43Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-11-05 04:55:43Z INFO ActionCommandManager] Register action command extension for command group
+[2026-11-05 04:55:43Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-11-05 04:55:43Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-11-05 04:55:43Z INFO ScriptHandler] Which2: 'powershell'
+[2026-11-05 04:55:43Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-11-05 04:55:43Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:43Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:43Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:43Z INFO HostContext] Well known directory 'Temp': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp'
+[2026-11-05 04:55:43Z INFO ScriptHandler] Which2: 'powershell'
+[2026-11-05 04:55:43Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper] Starting process:
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\4682b6f1-f6ce-4f4f-a516-1395822ea5ff.ps1'"'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\CICD_dockerCabral\CICD_dockerCabral'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-11-05 04:55:43Z INFO ProcessInvokerWrapper] Process started with process id 20548, waiting for process exit.
+[2026-11-05 04:55:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2e86b7b8-6469-4be0-9a7c-4f9bc48ab548', success rate: 1/1.
+[2026-11-05 04:55:44Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-11-05 04:55:44Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-11-05 04:55:45Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-11-05 04:55:45Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag\blocks\add85be7-4675-8841-b98c-2c02d08df88b_5483985d-f1fe-42b9-ae70-867d140d1b92.1
+[2026-11-05 04:55:46Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-11-05 04:55:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2e86b7b8-6469-4be0-9a7c-4f9bc48ab548', success rate: 1/1.
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper] Finished process 20548 with exit code 1, and elapsed time 00:00:04.1503438.
+[2026-11-05 04:55:47Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_runner_file_commands\step_summary_b06c1a7d-3b8b-42cf-86bc-b6e0ff800c0e) is empty; skipping attachment upload
+[2026-11-05 04:55:47Z INFO CreateArtifactsFileCommand] Processing $GITHUB_ARTIFACTS file 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_runner_file_commands\artifacts_b06c1a7d-3b8b-42cf-86bc-b6e0ff800c0e'
+[2026-11-05 04:55:47Z INFO CreateArtifactsFileCommand] $GITHUB_ARTIFACTS file is empty; nothing to process.
+[2026-11-05 04:55:47Z INFO StepsRunner] Step result: Failed
+[2026-11-05 04:55:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2e86b7b8-6469-4be0-9a7c-4f9bc48ab548', success rate: 1/1.
+[2026-11-05 04:55:47Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "2e86b7b8-6469-4be0-9a7c-4f9bc48ab548",
+  "stepContextName": "__run_2",
+  "result": "failed",
+  "errorMessages": [
+    "Process completed with exit code 1."
+  ],
+  "executionTimeInSeconds": 5,
+  "startTime": "2026-11-05T04:55:43.1885669Z",
+  "finishTime": "2026-11-05T04:55:47.4950543Z"
+}.
+[2026-11-05 04:55:47Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2026-11-05 04:55:47Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-11-05 04:55:47Z INFO StepsRunner] Processing step: DisplayName='Diagnose Docker Hub secrets'
+[2026-11-05 04:55:47Z INFO StepsRunner] Evaluating: success()
+[2026-11-05 04:55:47Z INFO StepsRunner] Result: false
+[2026-11-05 04:55:47Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2026-11-05 04:55:47Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2026-11-05 04:55:47Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-11-05 04:55:47Z INFO StepsRunner] Processing step: DisplayName='Post Checkout repository'
+[2026-11-05 04:55:47Z INFO StepsRunner] Evaluating: always()
+[2026-11-05 04:55:47Z INFO StepsRunner] Result: true
+[2026-11-05 04:55:47Z INFO StepsRunner] Starting the step.
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:47Z INFO StepsRunner] Which2: 'chcp'
+[2026-11-05 04:55:47Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper] Starting process:
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper] Process started with process id 16728, waiting for process exit.
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper] Finished process 16728 with exit code 0, and elapsed time 00:00:00.0326167.
+[2026-11-05 04:55:47Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Actions': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions'
+[2026-11-05 04:55:47Z INFO ActionManager] Load action that reference repository from 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions\actions\checkout\v4'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Actions': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions'
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 101,
+          "col": 3,
+          "lit": "allow-unsafe-pr-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 109,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-11-05 04:55:47Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-11-05 04:55:47Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-11-05 04:55:47Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Temp': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp'
+[2026-11-05 04:55:47Z INFO ExecutionContext] Write event payload to C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_github_workflow\event.json
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Temp': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp'
+[2026-11-05 04:55:47Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-11-05 04:55:47Z INFO ArtifactsListFileCommand] Wrote $GITHUB_ARTIFACTS_LIST with 0 subject(s) to 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_runner_file_commands\artifacts_list_a310c2f0-cc1a-45d9-be49-2895cb3d3e60'
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "kaylordfortu-afk/CICD_dockerCabral"
+}
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'ref': default value evaluate result: ""
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'ssh-key': default value evaluate result: ""
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'ssh-known-hosts': default value evaluate result: ""
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'ssh-user': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 51,
+  "col": 14,
+  "lit": "git"
+}
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 54,
+  "col": 14,
+  "lit": "true"
+}
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'path': default value evaluate result: ""
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 59,
+  "col": 14,
+  "lit": "true"
+}
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": ""
+}
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": ""
+}
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 76,
+  "col": 14,
+  "lit": "1"
+}
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 79,
+  "col": 14,
+  "lit": "false"
+}
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "true"
+}
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "false"
+}
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 94,
+  "col": 14,
+  "lit": "false"
+}
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 97,
+  "col": 14,
+  "lit": "true"
+}
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'github-server-url': default value evaluate result: ""
+[2026-11-05 04:55:47Z INFO ActionManifestManagerLegacy] Input 'allow-unsafe-pr-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 109,
+  "col": 14,
+  "lit": "false"
+}
+[2026-11-05 04:55:47Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-11-05 04:55:47Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-11-05 04:55:47Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-11-05 04:55:47Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-11-05 04:55:47Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-11-05 04:55:47Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-11-05 04:55:47Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-11-05 04:55:47Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-11-05 04:55:47Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-11-05 04:55:47Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-11-05 04:55:47Z INFO ActionCommandManager] Register action command extension for command error
+[2026-11-05 04:55:47Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-11-05 04:55:47Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-11-05 04:55:47Z INFO ActionCommandManager] Register action command extension for command group
+[2026-11-05 04:55:47Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-11-05 04:55:47Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:47Z INFO HostContext] Well known directory 'Externals': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\externals'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper] Starting process:
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\externals\node24\bin\node.exe'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\CICD_dockerCabral\CICD_dockerCabral'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-11-05 04:55:47Z INFO ProcessInvokerWrapper] Process started with process id 28664, waiting for process exit.
+[2026-11-05 04:55:47Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-11-05 04:55:47Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag\blocks\add85be7-4675-8841-b98c-2c02d08df88b_2e86b7b8-6469-4be0-9a7c-4f9bc48ab548.1
+[2026-11-05 04:55:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bd8f642a-bbec-4da5-9d3f-4329cdfbea60', success rate: 1/1.
+[2026-11-05 04:55:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bd8f642a-bbec-4da5-9d3f-4329cdfbea60', success rate: 1/1.
+[2026-11-05 04:55:48Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-11-05 04:55:48Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2026-11-05 04:55:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bd8f642a-bbec-4da5-9d3f-4329cdfbea60', success rate: 1/1.
+[2026-11-05 04:55:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bd8f642a-bbec-4da5-9d3f-4329cdfbea60', success rate: 1/1.
+[2026-11-05 04:55:49Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-11-05 04:55:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bd8f642a-bbec-4da5-9d3f-4329cdfbea60', success rate: 1/1.
+[2026-11-05 04:55:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bd8f642a-bbec-4da5-9d3f-4329cdfbea60', success rate: 1/1.
+[2026-11-05 04:55:50Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:50Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:50Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 04:55:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bd8f642a-bbec-4da5-9d3f-4329cdfbea60', success rate: 1/1.
+[2026-11-05 04:55:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 04:55:53Z INFO ProcessInvokerWrapper] Finished process 28664 with exit code 0, and elapsed time 00:00:05.4677786.
+[2026-11-05 04:55:53Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_runner_file_commands\step_summary_a310c2f0-cc1a-45d9-be49-2895cb3d3e60) is empty; skipping attachment upload
+[2026-11-05 04:55:53Z INFO CreateArtifactsFileCommand] Processing $GITHUB_ARTIFACTS file 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\_runner_file_commands\artifacts_a310c2f0-cc1a-45d9-be49-2895cb3d3e60'
+[2026-11-05 04:55:53Z INFO CreateArtifactsFileCommand] $GITHUB_ARTIFACTS file is empty; nothing to process.
+[2026-11-05 04:55:53Z INFO StepsRunner] Step result: 
+[2026-11-05 04:55:53Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node24",
+  "stage": "Post",
+  "stepId": "bd8f642a-bbec-4da5-9d3f-4329cdfbea60",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 6,
+  "startTime": "2026-11-05T04:55:47.523373Z",
+  "finishTime": "2026-11-05T04:55:53.1022295Z"
+}.
+[2026-11-05 04:55:53Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-11-05 04:55:53Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-11-05 04:55:53Z INFO JobRunner] Finalize job.
+[2026-11-05 04:55:53Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-11-05 04:55:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:53Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:55:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:55:53Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:55:53Z INFO JobExtension] Initialize Env context
+[2026-11-05 04:55:53Z INFO JobExtension] Initialize steps context
+[2026-11-05 04:55:53Z INFO JobExtension] Total accessible running process: 375.
+[2026-11-05 04:55:53Z INFO JobExtension] Wait for all connectivity checks to finish.
+[2026-11-05 04:55:53Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-11-05 04:55:53Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag\blocks\add85be7-4675-8841-b98c-2c02d08df88b_bd8f642a-bbec-4da5-9d3f-4329cdfbea60.1
+[2026-11-05 04:55:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'adfc27ab-341a-49ca-9d4a-a565b830203c', success rate: 1/1.
+[2026-11-05 04:55:53Z INFO JobExtension] Connectivity check result: {
+  "endpointUrl": "https://broker.actions.githubusercontent.com/health",
+  "endpointIPs": null,
+  "startTime": "2026-11-05T04:55:20.1930791Z",
+  "statusCode": "http_OK",
+  "requestId": "A1FF:175478:2FA0A25:308C2EA:6AEC0C38",
+  "httpRequestDurationInMs": 1237,
+  "dnsResolutionDurationInMs": 0,
+  "dnsError": null
+}
+[2026-11-05 04:55:53Z INFO JobExtension] Connectivity check result: {
+  "endpointUrl": "https://token.actions.githubusercontent.com/ready",
+  "endpointIPs": null,
+  "startTime": "2026-11-05T04:55:20.2000195Z",
+  "statusCode": "http_NoContent",
+  "requestId": "A204:8958D:33520DD:3766D50:6AEC0C38",
+  "httpRequestDurationInMs": 1382,
+  "dnsResolutionDurationInMs": 0,
+  "dnsError": null
+}
+[2026-11-05 04:55:53Z INFO JobExtension] Connectivity check result: {
+  "endpointUrl": "https://run.actions.githubusercontent.com/health",
+  "endpointIPs": null,
+  "startTime": "2026-11-05T04:55:20.2028242Z",
+  "statusCode": "http_OK",
+  "requestId": "A200:1747A4:2EE551F:2FD1413:6AEC0C38",
+  "httpRequestDurationInMs": 1227,
+  "dnsResolutionDurationInMs": 0,
+  "dnsError": null
+}
+[2026-11-05 04:55:53Z INFO JobExtension] Runner websocket probe result: {"connected":true,"connectCount":1,"lastCloseReason":"job_completed","totalDurationMs":32979,"errors":[]}
+[2026-11-05 04:55:53Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "adfc27ab-341a-49ca-9d4a-a565b830203c",
+  "result": "succeeded",
+  "errorMessages": [
+    "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/"
+  ],
+  "executionTimeInSeconds": 1,
+  "startTime": "2026-11-05T04:55:53.129028Z",
+  "finishTime": "2026-11-05T04:55:53.2289684Z"
+}.
+[2026-11-05 04:55:53Z INFO JobRunner] Job result after all job steps finish: Failed
+[2026-11-05 04:55:53Z INFO JobRunner] Completing the job execution context.
+[2026-11-05 04:55:53Z INFO JobRunner] Shutting down the job server queue.
+[2026-11-05 04:55:53Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2026-11-05 04:55:54Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-11-05 04:55:55Z INFO JobServerQueue] All queue process task stopped.
+[2026-11-05 04:55:55Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'adfc27ab-341a-49ca-9d4a-a565b830203c', success rate: 1/1.
+[2026-11-05 04:55:55Z INFO JobServerQueue] Web console line queue drained.
+[2026-11-05 04:55:55Z INFO JobServerQueue] Uploading 2 files in one shot.
+[2026-11-05 04:55:55Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2026-11-05 04:55:55Z INFO JobServerQueue] File upload queue drained.
+[2026-11-05 04:55:55Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-11-05 04:55:55Z INFO JobServerQueue] Uploading 2 file(s) in one shot through results service.
+[2026-11-05 04:55:55Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-11-05 04:55:55Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag\blocks\add85be7-4675-8841-b98c-2c02d08df88b_adfc27ab-341a-49ca-9d4a-a565b830203c.1
+[2026-11-05 04:55:57Z INFO JobServerQueue] Got a job log file to send to results service.
+[2026-11-05 04:55:57Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag\blocks\add85be7-4675-8841-b98c-2c02d08df88b_9b6b3055-6f15-53fb-9063-78ca630d75aa.1
+[2026-11-05 04:55:59Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2026-11-05 04:55:59Z INFO JobServerQueue] Results upload queue drained.
+[2026-11-05 04:56:00Z INFO JobServerQueue] Timeline update queue drained.
+[2026-11-05 04:56:00Z INFO JobServerQueue] Disposing job server ...
+[2026-11-05 04:56:00Z INFO JobServerQueue] Disposing results server ...
+[2026-11-05 04:56:00Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2026-11-05 04:56:00Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp
+[2026-11-05 04:56:00Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 04:56:00Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 04:56:00Z INFO HostContext] Well known directory 'Diag': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag'
+[2026-11-05 04:56:00Z INFO HostContext] Well known config file 'Telemetry': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_diag\.telemetry'
+[2026-11-05 04:56:00Z INFO JobRunner] Raising job completed against run service
+[2026-11-05 04:56:03Z INFO Worker] Job completed.
