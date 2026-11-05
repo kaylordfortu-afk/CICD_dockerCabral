@@ -1,7 +1,9 @@
 
 services:
   ionic-web:
-    image: ghcr.io/kaylordfortu-afk/cicd_dockercabral:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: Anime-List
     ports:
       - "8080:80"

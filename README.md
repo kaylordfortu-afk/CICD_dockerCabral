@@ -38,21 +38,21 @@ ionic serve
 ```
 
 ## Docker image deployment
-After a successful push to `master`, GitHub Actions publishes the Docker image to GHCR and deploys it to the Docker Desktop host running the repository's self-hosted GitHub Actions runner:
+After a successful push to `master`, GitHub Actions publishes the Docker image to:
 
 ```text
 ghcr.io/kaylordfortu-afk/cicd_dockercabral:latest
 ```
 
-The workflow also publishes a commit-specific `sha-<commit>` tag. The local deployment job pulls `latest` and recreates the Compose service on port `8080`.
+The workflow also publishes a commit-specific `sha-<commit>` tag. Publishing to GHCR makes the image available but does not start it on a server.
 
-To run it locally or on a Docker host manually:
+To run it locally or on a Docker host:
 ```bash
 docker pull ghcr.io/kaylordfortu-afk/cicd_dockercabral:latest
-docker compose up -d
+docker run -d --name anime-list --restart unless-stopped -p 8080:80 ghcr.io/kaylordfortu-afk/cicd_dockercabral:latest
 ```
 
-The local deployment requires the repository's self-hosted GitHub Actions runner to be online and Docker Desktop to be running. Start the runner from the `actions-runner` directory with `.\run.cmd` and leave it open. If the package is private, the workflow uses its `GITHUB_TOKEN` to authenticate; for manual pulls, authenticate to `ghcr.io` with a GitHub personal access token that has `read:packages` permission.
+If the package is private, authenticate to `ghcr.io` with a GitHub personal access token that has `read:packages` permission before pulling. Change the package visibility in the repository's Packages settings if it should be public.
 
 ## CRUD demonstration
 - **Create tab:** Add a user. (CREATE)

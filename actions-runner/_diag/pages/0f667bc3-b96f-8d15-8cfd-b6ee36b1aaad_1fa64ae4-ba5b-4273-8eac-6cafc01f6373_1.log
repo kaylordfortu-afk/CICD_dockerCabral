@@ -1,0 +1,46 @@
+﻿2026-11-05T07:02:40.9632544Z ##[group]Run actions/checkout@v4
+2026-11-05T07:02:40.9635897Z with:
+2026-11-05T07:02:40.9636751Z   repository: kaylordfortu-afk/CICD_dockerCabral
+2026-11-05T07:02:40.9643321Z   token: ***
+2026-11-05T07:02:40.9644022Z   ssh-strict: true
+2026-11-05T07:02:40.9644563Z   ssh-user: git
+2026-11-05T07:02:40.9645123Z   persist-credentials: true
+2026-11-05T07:02:40.9645794Z   clean: true
+2026-11-05T07:02:40.9646384Z   sparse-checkout-cone-mode: true
+2026-11-05T07:02:40.9647058Z   fetch-depth: 1
+2026-11-05T07:02:40.9647633Z   fetch-tags: false
+2026-11-05T07:02:40.9648212Z   show-progress: true
+2026-11-05T07:02:40.9648801Z   lfs: false
+2026-11-05T07:02:40.9649374Z   submodules: false
+2026-11-05T07:02:40.9649956Z   set-safe-directory: true
+2026-11-05T07:02:40.9650634Z   allow-unsafe-pr-checkout: false
+2026-11-05T07:02:40.9652884Z ##[endgroup]
+2026-11-05T07:02:43.3347854Z Syncing repository: kaylordfortu-afk/CICD_dockerCabral
+2026-11-05T07:02:43.3351703Z ##[group]Getting Git version info
+2026-11-05T07:02:43.3353232Z Working directory is 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\CICD_dockerCabral\CICD_dockerCabral'
+2026-11-05T07:02:43.3430015Z [command]"C:\Program Files\Git\cmd\git.exe" version
+2026-11-05T07:02:43.4149734Z git version 2.51.1.windows.1
+2026-11-05T07:02:43.4220670Z ##[endgroup]
+2026-11-05T07:02:43.4244483Z Copying 'C:\Users\LENOVO\.gitconfig' to 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\4f5d9188-abf1-48d1-97e0-b65c1211394c\.gitconfig'
+2026-11-05T07:02:43.4277032Z Temporarily overriding HOME='C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\_temp\4f5d9188-abf1-48d1-97e0-b65c1211394c' before making global git config changes
+2026-11-05T07:02:43.4279219Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-05T07:02:43.4288865Z [command]"C:\Program Files\Git\cmd\git.exe" config --global --add safe.directory C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\CICD_dockerCabral\CICD_dockerCabral
+2026-11-05T07:02:43.4823612Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --get remote.origin.url
+2026-11-05T07:02:43.5240765Z https://github.com/kaylordfortu-afk/CICD_dockerCabral
+2026-11-05T07:02:43.5295504Z ##[group]Removing previously created refs, to avoid conflicts
+2026-11-05T07:02:43.5303258Z [command]"C:\Program Files\Git\cmd\git.exe" rev-parse --symbolic-full-name --verify --quiet HEAD
+2026-11-05T07:02:43.7392840Z ##[endgroup]
+2026-11-05T07:02:43.7399713Z [command]"C:\Program Files\Git\cmd\git.exe" submodule status
+2026-11-05T07:02:44.8430285Z ##[group]Cleaning the repository
+2026-11-05T07:02:44.8448038Z [command]"C:\Program Files\Git\cmd\git.exe" clean -ffdx
+2026-11-05T07:02:44.9224892Z [command]"C:\Program Files\Git\cmd\git.exe" reset --hard HEAD
+2026-11-05T07:02:44.9834603Z ##[error]fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+2026-11-05T07:02:44.9899160Z Use '--' to separate paths from revisions, like this:
+2026-11-05T07:02:44.9903908Z 'git <command> [<revision>...] -- [<file>...]'
+2026-11-05T07:02:44.9905522Z ##[endgroup]
+2026-11-05T07:02:44.9979585Z ##[warning]Unable to clean or reset the repository. The repository will be recreated instead.
+2026-11-05T07:02:44.9984892Z Deleting the contents of 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\CICD_dockerCabral\CICD_dockerCabral'
+2026-11-05T07:02:45.0470256Z ##[group]Initializing the repository
+2026-11-05T07:02:45.0543976Z [command]"C:\Program Files\Git\cmd\git.exe" init C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work\CICD_dockerCabral\CICD_dockerCabral
+2026-11-05T07:02:45.1772286Z Initialized empty Git repository in C:/Users/LENOVO/OneDrive/Desktop/MyPROJECT/CICD_dockerCabral/actions-runner/_work/CICD_dockerCabral/CICD_dockerCabral/.git/
+2026-11-05T07:02:45.1844186Z [command]"C:\Program Files

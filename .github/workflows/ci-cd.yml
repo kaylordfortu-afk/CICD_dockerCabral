@@ -78,35 +78,3 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
-  deploy-local-docker:
-    name: Deploy to local Docker
-    runs-on: self-hosted
-    needs: publish-docker-image
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-    permissions:
-      contents: read
-      packages: read
-
-    steps:
-      - name: Checkout source code
-        uses: actions/checkout@v4
-
-      - name: Pull and restart the app
-        shell: pwsh
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          $ErrorActionPreference = 'Stop'
-          $env:GH_TOKEN | docker login ghcr.io --username $env:GITHUB_ACTOR --password-stdin
-          if ($LASTEXITCODE -ne 0) { throw 'GHCR login failed.' }
-          try {
-            docker compose pull
-            if ($LASTEXITCODE -ne 0) { throw 'Could not pull the new Docker image.' }
-
-            docker compose up -d --force-recreate --remove-orphans
-            if ($LASTEXITCODE -ne 0) { throw 'Could not restart the app with the new image.' }
-          }
-          finally {
-            docker logout ghcr.io
-          }

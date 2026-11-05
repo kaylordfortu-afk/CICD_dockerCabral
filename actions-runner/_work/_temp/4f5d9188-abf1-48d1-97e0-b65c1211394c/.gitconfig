@@ -1,0 +1,7 @@
+[user]
+	name = Adrian Largo
+	email = akosiadrianboy@gmail.com
+[core]
+	pager = cat
+[safe]
+	directory = C:\\Users\\LENOVO\\OneDrive\\Desktop\\MyPROJECT\\CICD_dockerCabral\\actions-runner\\_work\\CICD_dockerCabral\\CICD_dockerCabral
