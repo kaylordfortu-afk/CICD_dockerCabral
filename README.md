@@ -37,6 +37,23 @@ Or:
 ionic serve
 ```
 
+## Docker image deployment
+After a successful push to `master`, GitHub Actions publishes the Docker image to:
+
+```text
+ghcr.io/kaylordfortu-afk/cicd_dockercabral:latest
+```
+
+The workflow also publishes a commit-specific `sha-<commit>` tag. Publishing to GHCR makes the image available but does not start it on a server.
+
+To run it locally or on a Docker host:
+```bash
+docker pull ghcr.io/kaylordfortu-afk/cicd_dockercabral:latest
+docker run -d --name anime-list --restart unless-stopped -p 8080:80 ghcr.io/kaylordfortu-afk/cicd_dockercabral:latest
+```
+
+If the package is private, authenticate to `ghcr.io` with a GitHub personal access token that has `read:packages` permission before pulling. Change the package visibility in the repository's Packages settings if it should be public.
+
 ## CRUD demonstration
 - **Create tab:** Add a user. (CREATE)
 - **Read tab:** View saved users. (READ)
