@@ -1,3 +1,14 @@
+
+name: docker-cabral-ci-cd
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
 jobs:
   continuous-integration:
     name: Continuous Integration
