@@ -1,0 +1,485 @@
+[2026-11-05 05:11:30Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 05:11:30Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials'
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 05:11:30Z INFO HostContext] Well known config file 'Runner': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.runner'
+[2026-11-05 05:11:30Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2026-11-05 05:11:30Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26200.
+[2026-11-05 05:11:30Z INFO Listener] Version: 2.338.2
+[2026-11-05 05:11:30Z INFO Listener] Commit: d1eb12d4b115c301201de27d667284e1a80f2ab5
+[2026-11-05 05:11:30Z INFO Listener] Culture: en-PH
+[2026-11-05 05:11:30Z INFO Listener] UI Culture: en-US
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 05:11:30Z INFO Listener] Validating directory permissions for: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 05:11:30Z INFO CommandLineParser] Parse
+[2026-11-05 05:11:30Z INFO CommandLineParser] Parsing 1 args
+[2026-11-05 05:11:30Z INFO CommandLineParser] parsing argument
+[2026-11-05 05:11:30Z INFO CommandLineParser] HasArgs: False
+[2026-11-05 05:11:30Z INFO CommandLineParser] Adding Command: run
+[2026-11-05 05:11:30Z INFO Listener] Arguments parsed
+[2026-11-05 05:11:30Z INFO Runner] ExecuteCommand
+[2026-11-05 05:11:30Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin\Runner.Listener.dll
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:11:30Z INFO ConfigurationStore] binPath: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 05:11:30Z INFO ConfigurationStore] RootFolder: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 05:11:30Z INFO HostContext] Well known config file 'Runner': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.runner'
+[2026-11-05 05:11:30Z INFO ConfigurationStore] ConfigFilePath: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.runner
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 05:11:30Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.runner_migrated'
+[2026-11-05 05:11:30Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.runner_migrated
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 05:11:30Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials'
+[2026-11-05 05:11:30Z INFO ConfigurationStore] CredFilePath: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 05:11:30Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_migrated'
+[2026-11-05 05:11:30Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_migrated
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 05:11:30Z INFO HostContext] Well known config file 'Service': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.service'
+[2026-11-05 05:11:30Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.service
+[2026-11-05 05:11:30Z INFO CommandSettings] Flag 'help': 'False'
+[2026-11-05 05:11:30Z INFO CommandSettings] Flag 'version': 'False'
+[2026-11-05 05:11:30Z INFO CommandSettings] Flag 'commit': 'False'
+[2026-11-05 05:11:30Z INFO CommandSettings] Flag 'check': 'False'
+[2026-11-05 05:11:30Z INFO CommandSettings] Command 'configure': 'False'
+[2026-11-05 05:11:30Z INFO CommandSettings] Command 'remove': 'False'
+[2026-11-05 05:11:30Z INFO CommandSettings] Command 'warmup': 'False'
+[2026-11-05 05:11:30Z INFO ConfigurationManager] LoadSettings
+[2026-11-05 05:11:30Z INFO ConfigurationStore] IsConfigured()
+[2026-11-05 05:11:30Z INFO ConfigurationStore] IsConfigured: True
+[2026-11-05 05:11:30Z INFO ConfigurationManager] Is configured: True
+[2026-11-05 05:11:30Z INFO ConfigurationStore] Read setting file: 414 chars
+[2026-11-05 05:11:30Z INFO ConfigurationManager] Settings Loaded
+[2026-11-05 05:11:30Z INFO ConfigurationStore] IsServiceConfigured()
+[2026-11-05 05:11:30Z INFO ConfigurationStore] IsServiceConfigured: False
+[2026-11-05 05:11:30Z INFO CommandSettings] Command 'run': 'True'
+[2026-11-05 05:11:30Z INFO ConfigurationStore] IsConfigured()
+[2026-11-05 05:11:30Z INFO ConfigurationStore] IsConfigured: True
+[2026-11-05 05:11:30Z INFO ConfigurationManager] Is configured: True
+[2026-11-05 05:11:30Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2026-11-05 05:11:30Z INFO Runner] Set runner startup type - Manual
+[2026-11-05 05:11:30Z INFO CommandSettings] Flag 'once': 'False'
+[2026-11-05 05:11:30Z INFO CommandSettings] Flag 'once': 'False'
+[2026-11-05 05:11:30Z INFO Runner] RunAsync
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 05:11:30Z INFO Runner] Validating directory permissions for: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 05:11:30Z INFO ConfigurationManager] LoadMigratedSettings
+[2026-11-05 05:11:30Z INFO ConfigurationStore] IsMigratedConfigured()
+[2026-11-05 05:11:30Z INFO ConfigurationStore] IsMigratedConfigured: False
+[2026-11-05 05:11:30Z INFO Runner] Failed to load migrated settings: No migrated configuration found.
+[2026-11-05 05:11:30Z INFO Runner] Falling back to original .runner settings
+[2026-11-05 05:11:30Z INFO Runner] Using BrokerMessageListener
+[2026-11-05 05:11:30Z INFO BrokerMessageListener] Using provided settings
+[2026-11-05 05:11:30Z INFO BrokerMessageListener] {
+  "AgentId": 24,
+  "AgentName": "LAPTOP-8RGQ3BAE",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus26.actions.githubusercontent.com/T9gQD0gG7AGumaZDeO5am16gyhj5D3cqQI0y80a1SDgZMn5e4z/",
+  "GitHubUrl": "https://github.com/kaylordfortu-afk/CICD_dockerCabral",
+  "WorkFolder": "_work",
+  "UseV2Flow": true,
+  "ServerUrlV2": "https://broker.actions.githubusercontent.com/"
+}
+[2026-11-05 05:11:30Z INFO BrokerMessageListener] Loading Credentials
+[2026-11-05 05:11:30Z INFO ConfigurationStore] HasCredentials()
+[2026-11-05 05:11:30Z INFO ConfigurationStore] stored True
+[2026-11-05 05:11:30Z INFO CredentialManager] GetCredentialProvider
+[2026-11-05 05:11:30Z INFO CredentialManager] Creating type OAuth
+[2026-11-05 05:11:30Z INFO CredentialManager] Creating credential type: OAuth
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:11:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 05:11:30Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams'
+[2026-11-05 05:11:30Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:11:31Z INFO BrokerMessageListener] Attempt to create session.
+[2026-11-05 05:11:31Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2026-11-05 05:11:31Z INFO ConfigurationStore] HasCredentials()
+[2026-11-05 05:11:31Z INFO ConfigurationStore] stored True
+[2026-11-05 05:11:31Z INFO CredentialManager] GetCredentialProvider
+[2026-11-05 05:11:31Z INFO CredentialManager] Creating type OAuth
+[2026-11-05 05:11:31Z INFO CredentialManager] Creating credential type: OAuth
+[2026-11-05 05:11:31Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:11:31Z INFO BrokerMessageListener] VssConnection created
+[2026-11-05 05:11:31Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2026-11-05 05:11:31Z INFO RunnerServer] EstablishVssConnection
+[2026-11-05 05:11:31Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2026-11-05 05:11:31Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-11-05 05:11:31Z INFO RunnerServer] EstablishVssConnection
+[2026-11-05 05:11:31Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-11-05 05:11:31Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-11-05 05:11:31Z INFO RunnerServer] EstablishVssConnection
+[2026-11-05 05:11:31Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-11-05 05:11:31Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-11-05 05:11:33Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-11-05 05:11:33Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-11-05 05:11:34Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-11-05 05:11:34Z INFO BrokerMessageListener] VssConnection created
+[2026-11-05 05:11:34Z INFO Terminal] WRITE LINE: 
+[2026-11-05 05:11:34Z INFO Terminal] WRITE LINE: 
+[2026-11-05 05:11:34Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:11:34Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:11:35Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-11-05 05:11:37Z INFO BrokerMessageListener] Session created.
+[2026-11-05 05:11:37Z INFO Terminal] WRITE LINE: Current runner version: '2.338.2'
+[2026-11-05 05:11:37Z INFO Terminal] WRITE LINE: 2026-11-05 05:11:37Z: Listening for Jobs
+[2026-11-05 05:11:37Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2026-11-05 05:15:57Z INFO BrokerMessageListener] Acknowledging runner request '81cddf4d-70e6-55fc-8955-a4cff6b87649'.
+[2026-11-05 05:15:58Z INFO ConfigurationStore] HasCredentials()
+[2026-11-05 05:15:58Z INFO ConfigurationStore] stored True
+[2026-11-05 05:15:58Z INFO CredentialManager] GetCredentialProvider
+[2026-11-05 05:15:58Z INFO CredentialManager] Creating type OAuth
+[2026-11-05 05:15:58Z INFO CredentialManager] Creating credential type: OAuth
+[2026-11-05 05:15:58Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:15:58Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:15:58Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:15:59Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-11-05 05:16:02Z INFO JobDispatcher] Job request 0 for plan adedb890-5b92-8572-b6ee-e99dfba43240 job 81cddf4d-70e6-55fc-8955-a4cff6b87649 received.
+[2026-11-05 05:16:02Z INFO JobDispatcher] Pull OrchestrationId adedb890-5b92-8572-b6ee-e99dfba43240.build-and-push.__default from JWT claims
+[2026-11-05 05:16:02Z INFO BrokerMessageListener] Received job status event. JobState: Busy
+[2026-11-05 05:16:02Z INFO BrokerMessageListener] _getMessagesTokenSource is already disposed.
+[2026-11-05 05:16:02Z INFO Terminal] WRITE LINE: 2026-11-05 05:16:02Z: Running job: build-and-push
+[2026-11-05 05:16:02Z INFO JobDispatcher] Start renew job request 0 for job 81cddf4d-70e6-55fc-8955-a4cff6b87649.
+[2026-11-05 05:16:03Z INFO JobDispatcher] Successfully renew job 81cddf4d-70e6-55fc-8955-a4cff6b87649, job is valid till 11/5/2026 5:26:03 AM
+[2026-11-05 05:16:03Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:16:03Z INFO ProcessInvokerWrapper] Starting process:
+[2026-11-05 05:16:03Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin\Runner.Worker.exe'
+[2026-11-05 05:16:03Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2128 2140'
+[2026-11-05 05:16:03Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:16:03Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-11-05 05:16:03Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-11-05 05:16:03Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2026-11-05 05:16:03Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-11-05 05:16:03Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2026-11-05 05:16:03Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-11-05 05:16:03Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2026-11-05 05:16:04Z INFO ProcessInvokerWrapper] Process started with process id 30540, waiting for process exit.
+[2026-11-05 05:16:04Z INFO JobDispatcher] Send job request message to worker for job 81cddf4d-70e6-55fc-8955-a4cff6b87649.
+[2026-11-05 05:16:04Z INFO ProcessChannel] Sending message of length 25819, with hash 'a739a11dd6838ea00bf10d74175b68d7545ea5bea73914836574f756d7037573'
+[2026-11-05 05:16:05Z INFO JobNotification] Entering JobStarted Notification
+[2026-11-05 05:16:05Z INFO JobNotification] Entering StartMonitor
+[2026-11-05 05:17:05Z INFO JobDispatcher] Successfully renew job 81cddf4d-70e6-55fc-8955-a4cff6b87649, job is valid till 11/5/2026 5:27:05 AM
+[2026-11-05 05:18:05Z INFO JobDispatcher] Successfully renew job 81cddf4d-70e6-55fc-8955-a4cff6b87649, job is valid till 11/5/2026 5:28:05 AM
+[2026-11-05 05:19:06Z INFO JobDispatcher] Successfully renew job 81cddf4d-70e6-55fc-8955-a4cff6b87649, job is valid till 11/5/2026 5:29:06 AM
+[2026-11-05 05:20:06Z INFO JobDispatcher] Successfully renew job 81cddf4d-70e6-55fc-8955-a4cff6b87649, job is valid till 11/5/2026 5:30:06 AM
+[2026-11-05 05:21:06Z INFO JobDispatcher] Successfully renew job 81cddf4d-70e6-55fc-8955-a4cff6b87649, job is valid till 11/5/2026 5:31:07 AM
+[2026-11-05 05:22:07Z INFO JobDispatcher] Successfully renew job 81cddf4d-70e6-55fc-8955-a4cff6b87649, job is valid till 11/5/2026 5:32:07 AM
+[2026-11-05 05:23:07Z INFO JobDispatcher] Successfully renew job 81cddf4d-70e6-55fc-8955-a4cff6b87649, job is valid till 11/5/2026 5:33:07 AM
+[2026-11-05 05:24:08Z INFO JobDispatcher] Successfully renew job 81cddf4d-70e6-55fc-8955-a4cff6b87649, job is valid till 11/5/2026 5:34:08 AM
+[2026-11-05 05:25:08Z INFO JobDispatcher] Successfully renew job 81cddf4d-70e6-55fc-8955-a4cff6b87649, job is valid till 11/5/2026 5:35:08 AM
+[2026-11-05 05:26:08Z INFO JobDispatcher] Successfully renew job 81cddf4d-70e6-55fc-8955-a4cff6b87649, job is valid till 11/5/2026 5:36:08 AM
+[2026-11-05 05:27:09Z INFO JobDispatcher] Successfully renew job 81cddf4d-70e6-55fc-8955-a4cff6b87649, job is valid till 11/5/2026 5:37:09 AM
+[2026-11-05 05:27:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 05:27:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 05:27:43Z INFO ProcessInvokerWrapper] Finished process 30540 with exit code 102, and elapsed time 00:11:39.1591332.
+[2026-11-05 05:27:43Z INFO JobDispatcher] Worker finished for job 81cddf4d-70e6-55fc-8955-a4cff6b87649. Code: 102
+[2026-11-05 05:27:43Z INFO JobDispatcher] finish job request for job 81cddf4d-70e6-55fc-8955-a4cff6b87649 with result: Failed
+[2026-11-05 05:27:43Z INFO Terminal] WRITE LINE: 2026-11-05 05:27:43Z: Job build-and-push completed with result: Failed
+[2026-11-05 05:27:43Z INFO JobDispatcher] Stop renew job request for job 81cddf4d-70e6-55fc-8955-a4cff6b87649.
+[2026-11-05 05:27:43Z INFO JobDispatcher] job renew has been cancelled, stop renew job 81cddf4d-70e6-55fc-8955-a4cff6b87649.
+[2026-11-05 05:27:43Z INFO JobNotification] Entering JobCompleted Notification
+[2026-11-05 05:27:43Z INFO JobNotification] Entering EndMonitor
+[2026-11-05 05:27:43Z INFO BrokerMessageListener] Received job status event. JobState: Online
+[2026-11-05 05:27:43Z WARN GitHubActionsService] GET request to https://broker.actions.githubusercontent.com/message?sessionId=ad42017d-92fb-458e-80ee-c3c7f3adada8&status=Busy&runnerVersion=2.338.2&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2026-11-05 05:27:43Z ERR  BrokerServer] Catch exception during request
+[2026-11-05 05:27:43Z ERR  BrokerServer] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass9_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxAttempts, Func`2 shouldRetry)
+[2026-11-05 05:27:43Z ERR  BrokerServer] #####################################################
+[2026-11-05 05:27:43Z ERR  BrokerServer] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+[2026-11-05 05:27:43Z ERR  BrokerServer] #####################################################
+[2026-11-05 05:27:43Z ERR  BrokerServer] System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+[2026-11-05 05:27:43Z ERR  BrokerServer] #####################################################
+[2026-11-05 05:27:43Z ERR  BrokerServer] System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+[2026-11-05 05:27:43Z WARN BrokerServer] Back off 5.763 seconds before next retry. 4 attempt left.
+[2026-11-05 05:27:43Z INFO BrokerMessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2026-11-05 05:42:50Z INFO Runner] Received RunnerRefreshConfigMessage for 'runner' config file
+[2026-11-05 05:42:50Z INFO RunnerConfigUpdater] Verifying runner qualified id: U_kgDODdcRpQ/R_kgDOVZei2g/self-hosted/24
+[2026-11-05 05:42:50Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:42:50Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 05:42:50Z INFO HostContext] Well known config file 'Runner': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.runner'
+[2026-11-05 05:42:51Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:42:51Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:42:53Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-11-05 05:42:53Z INFO ConfigurationStore] Saving runner migrated settings
+[2026-11-05 05:42:53Z INFO ConfigurationStore] Migrated Settings Saved.
+[2026-11-05 05:42:53Z INFO Runner] Runner configuration was updated. Session restart has been scheduled
+[2026-11-05 05:42:53Z INFO Runner] Pending session restart detected and job dispatcher is not busy. Restarting session now.
+[2026-11-05 05:42:53Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2026-11-05 05:42:53Z INFO JobDispatcher] Ensure WorkerDispatcher for job 81cddf4d-70e6-55fc-8955-a4cff6b87649 run to finish, cancel any running job.
+[2026-11-05 05:42:53Z INFO JobDispatcher] Job request 81cddf4d-70e6-55fc-8955-a4cff6b87649 processed succeed.
+[2026-11-05 05:42:53Z INFO Runner] Deleting Runner Session...
+[2026-11-05 05:42:54Z INFO Runner] Restarting runner session after config update...
+[2026-11-05 05:42:54Z INFO Runner] Runner configuration was refreshed, restarting session...
+[2026-11-05 05:42:54Z INFO ConfigurationManager] LoadSettings
+[2026-11-05 05:42:54Z INFO ConfigurationStore] IsConfigured()
+[2026-11-05 05:42:54Z INFO ConfigurationStore] IsConfigured: True
+[2026-11-05 05:42:54Z INFO ConfigurationManager] Is configured: True
+[2026-11-05 05:42:54Z INFO ConfigurationManager] Settings Loaded
+[2026-11-05 05:42:54Z INFO Runner] RunAsync
+[2026-11-05 05:42:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:42:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner'
+[2026-11-05 05:42:54Z INFO HostContext] Well known directory 'Work': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 05:42:54Z INFO Runner] Validating directory permissions for: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\_work'
+[2026-11-05 05:42:54Z INFO ConfigurationManager] LoadMigratedSettings
+[2026-11-05 05:42:54Z INFO ConfigurationStore] IsMigratedConfigured()
+[2026-11-05 05:42:54Z INFO ConfigurationStore] IsMigratedConfigured: True
+[2026-11-05 05:42:54Z INFO ConfigurationStore] Read migrated setting file: 414 chars
+[2026-11-05 05:42:54Z INFO ConfigurationManager] Migrated Settings Loaded
+[2026-11-05 05:42:54Z INFO Runner] Loaded migrated settings from .runner_migrated file
+[2026-11-05 05:42:54Z INFO Runner] {
+  "AgentId": 24,
+  "AgentName": "LAPTOP-8RGQ3BAE",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus26.actions.githubusercontent.com/T9gQD0gG7AGumaZDeO5am16gyhj5D3cqQI0y80a1SDgZMn5e4z/",
+  "GitHubUrl": "https://github.com/kaylordfortu-afk/CICD_dockerCabral",
+  "WorkFolder": "_work",
+  "UseV2Flow": true,
+  "ServerUrlV2": "https://broker.actions.githubusercontent.com/"
+}
+[2026-11-05 05:42:54Z INFO Runner] Attempting to create session using migrated settings
+[2026-11-05 05:42:54Z INFO Runner] Using BrokerMessageListener
+[2026-11-05 05:42:54Z INFO BrokerMessageListener] Using provided settings
+[2026-11-05 05:42:54Z INFO BrokerMessageListener] Using migrated settings from .runner_migrated
+[2026-11-05 05:42:54Z INFO BrokerMessageListener] {
+  "AgentId": 24,
+  "AgentName": "LAPTOP-8RGQ3BAE",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus26.actions.githubusercontent.com/T9gQD0gG7AGumaZDeO5am16gyhj5D3cqQI0y80a1SDgZMn5e4z/",
+  "GitHubUrl": "https://github.com/kaylordfortu-afk/CICD_dockerCabral",
+  "WorkFolder": "_work",
+  "UseV2Flow": true,
+  "ServerUrlV2": "https://broker.actions.githubusercontent.com/"
+}
+[2026-11-05 05:42:54Z INFO BrokerMessageListener] Loading Credentials
+[2026-11-05 05:42:54Z INFO ConfigurationStore] HasCredentials()
+[2026-11-05 05:42:54Z INFO ConfigurationStore] stored True
+[2026-11-05 05:42:54Z INFO CredentialManager] GetCredentialProvider
+[2026-11-05 05:42:54Z INFO CredentialManager] Creating type OAuth
+[2026-11-05 05:42:54Z INFO CredentialManager] Creating credential type: OAuth
+[2026-11-05 05:42:54Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:42:54Z INFO BrokerMessageListener] Attempt to create session.
+[2026-11-05 05:42:54Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2026-11-05 05:42:54Z INFO ConfigurationStore] HasCredentials()
+[2026-11-05 05:42:54Z INFO ConfigurationStore] stored True
+[2026-11-05 05:42:54Z INFO CredentialManager] GetCredentialProvider
+[2026-11-05 05:42:54Z INFO CredentialManager] Creating type OAuth
+[2026-11-05 05:42:54Z INFO CredentialManager] Creating credential type: OAuth
+[2026-11-05 05:42:54Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:42:54Z INFO BrokerMessageListener] VssConnection created
+[2026-11-05 05:42:54Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2026-11-05 05:42:54Z INFO RunnerServer] EstablishVssConnection
+[2026-11-05 05:42:54Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2026-11-05 05:42:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-11-05 05:42:54Z INFO RunnerServer] EstablishVssConnection
+[2026-11-05 05:42:54Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-11-05 05:42:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-11-05 05:42:54Z INFO RunnerServer] EstablishVssConnection
+[2026-11-05 05:42:54Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-11-05 05:42:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-11-05 05:42:55Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-11-05 05:42:55Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-11-05 05:42:55Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-11-05 05:42:55Z INFO BrokerMessageListener] VssConnection created
+[2026-11-05 05:42:55Z INFO Terminal] WRITE LINE: 
+[2026-11-05 05:42:55Z INFO Terminal] WRITE LINE: 
+[2026-11-05 05:42:55Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:42:55Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:42:57Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-11-05 05:42:58Z INFO BrokerMessageListener] Session created.
+[2026-11-05 05:42:58Z INFO Runner] Successfully created session with migrated settings
+[2026-11-05 05:42:58Z INFO Terminal] WRITE LINE: Current runner version: '2.338.2'
+[2026-11-05 05:42:58Z INFO Terminal] WRITE LINE: 2026-11-05 05:42:58Z: Listening for Jobs
+[2026-11-05 05:42:58Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2026-11-05 05:47:15Z INFO BrokerMessageListener] Acknowledging runner request 'af0f5762-a15b-52c3-beb1-32c98869f7aa'.
+[2026-11-05 05:47:15Z INFO ConfigurationStore] HasCredentials()
+[2026-11-05 05:47:15Z INFO ConfigurationStore] stored True
+[2026-11-05 05:47:15Z INFO CredentialManager] GetCredentialProvider
+[2026-11-05 05:47:15Z INFO CredentialManager] Creating type OAuth
+[2026-11-05 05:47:15Z INFO CredentialManager] Creating credential type: OAuth
+[2026-11-05 05:47:15Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:47:15Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:47:15Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\.credentials_rsaparams
+[2026-11-05 05:47:16Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-11-05 05:47:18Z INFO JobDispatcher] Job request 0 for plan bb53b4d5-21b1-832f-a8c5-abcec13bf4eb job af0f5762-a15b-52c3-beb1-32c98869f7aa received.
+[2026-11-05 05:47:18Z INFO JobDispatcher] Pull OrchestrationId bb53b4d5-21b1-832f-a8c5-abcec13bf4eb.build-and-push.__default from JWT claims
+[2026-11-05 05:47:18Z INFO BrokerMessageListener] Received job status event. JobState: Busy
+[2026-11-05 05:47:18Z INFO BrokerMessageListener] _getMessagesTokenSource is already disposed.
+[2026-11-05 05:47:18Z INFO Terminal] WRITE LINE: 2026-11-05 05:47:18Z: Running job: build-and-push
+[2026-11-05 05:47:18Z INFO JobDispatcher] Start renew job request 0 for job af0f5762-a15b-52c3-beb1-32c98869f7aa.
+[2026-11-05 05:47:20Z INFO JobDispatcher] Successfully renew job af0f5762-a15b-52c3-beb1-32c98869f7aa, job is valid till 11/5/2026 5:57:19 AM
+[2026-11-05 05:47:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:47:20Z INFO ProcessInvokerWrapper] Starting process:
+[2026-11-05 05:47:20Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin\Runner.Worker.exe'
+[2026-11-05 05:47:20Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1676 2068'
+[2026-11-05 05:47:20Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\LENOVO\OneDrive\Desktop\MyPROJECT\CICD_dockerCabral\actions-runner\bin'
+[2026-11-05 05:47:20Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-11-05 05:47:20Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-11-05 05:47:20Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2026-11-05 05:47:20Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-11-05 05:47:20Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2026-11-05 05:47:20Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-11-05 05:47:20Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2026-11-05 05:47:21Z INFO ProcessInvokerWrapper] Process started with process id 24376, waiting for process exit.
+[2026-11-05 05:47:21Z INFO JobDispatcher] Send job request message to worker for job af0f5762-a15b-52c3-beb1-32c98869f7aa.
+[2026-11-05 05:47:21Z INFO ProcessChannel] Sending message of length 25832, with hash '2226fd69abdb96adc0b83ec57fe8352fc31c4c94564d68c993894a577ccce6e1'
+[2026-11-05 05:47:22Z INFO JobNotification] Entering JobStarted Notification
+[2026-11-05 05:47:22Z INFO JobNotification] Entering StartMonitor
+[2026-11-05 05:48:22Z INFO JobDispatcher] Successfully renew job af0f5762-a15b-52c3-beb1-32c98869f7aa, job is valid till 11/5/2026 5:58:22 AM
+[2026-11-05 05:49:22Z INFO JobDispatcher] Successfully renew job af0f5762-a15b-52c3-beb1-32c98869f7aa, job is valid till 11/5/2026 5:59:22 AM
+[2026-11-05 05:50:23Z INFO JobDispatcher] Successfully renew job af0f5762-a15b-52c3-beb1-32c98869f7aa, job is valid till 11/5/2026 6:00:23 AM
+[2026-11-05 05:51:23Z INFO JobDispatcher] Successfully renew job af0f5762-a15b-52c3-beb1-32c98869f7aa, job is valid till 11/5/2026 6:01:23 AM
+[2026-11-05 05:51:37Z INFO Terminal] WRITE LINE: Exiting...
+[2026-11-05 05:51:37Z INFO ConfigurationStore] IsServiceConfigured()
+[2026-11-05 05:51:37Z INFO ConfigurationStore] IsServiceConfigured: False
+[2026-11-05 05:51:37Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2026-11-05 05:51:37Z WARN GitHubActionsService] GET request to https://broker.actions.githubusercontent.com/message?sessionId=a5423ff0-6fd6-4f27-9a3c-eda299b5868c&status=Busy&runnerVersion=2.338.2&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2026-11-05 05:51:37Z ERR  BrokerServer] Catch exception during request
+[2026-11-05 05:51:37Z ERR  BrokerServer] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass9_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxAttempts, Func`2 shouldRetry)
+[2026-11-05 05:51:37Z ERR  BrokerServer] #####################################################
+[2026-11-05 05:51:37Z ERR  BrokerServer] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+[2026-11-05 05:51:37Z ERR  BrokerServer] #####################################################
+[2026-11-05 05:51:37Z ERR  BrokerServer] System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+[2026-11-05 05:51:37Z ERR  BrokerServer] #####################################################
+[2026-11-05 05:51:37Z ERR  BrokerServer] System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+[2026-11-05 05:51:37Z WARN BrokerServer] Back off 7.174 seconds before next retry. 4 attempt left.
+[2026-11-05 05:51:37Z INFO BrokerMessageListener] Get next message has been cancelled.
+[2026-11-05 05:51:37Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2026-11-05 05:51:37Z INFO JobDispatcher] Ensure WorkerDispatcher for job af0f5762-a15b-52c3-beb1-32c98869f7aa run to finish, cancel any running job.
+[2026-11-05 05:51:37Z INFO JobDispatcher] Send job cancellation message to worker for job af0f5762-a15b-52c3-beb1-32c98869f7aa.
+[2026-11-05 05:51:37Z INFO ProcessChannel] Sending message of length 0, with hash 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+[2026-11-05 05:51:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 05:51:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-11-05 05:51:47Z INFO ProcessInvokerWrapper] Finished process 24376 with exit code 102, and elapsed time 00:04:26.1605478.
+[2026-11-05 05:51:47Z INFO JobDispatcher] finish job request for job af0f5762-a15b-52c3-beb1-32c98869f7aa with result: Canceled
+[2026-11-05 05:51:47Z INFO Terminal] WRITE LINE: 2026-11-05 05:51:47Z: Job build-and-push completed with result: Canceled
+[2026-11-05 05:51:47Z INFO JobDispatcher] Stop renew job request for job af0f5762-a15b-52c3-beb1-32c98869f7aa.
+[2026-11-05 05:51:47Z INFO JobDispatcher] job renew has been cancelled, stop renew job af0f5762-a15b-52c3-beb1-32c98869f7aa.
+[2026-11-05 05:51:47Z INFO JobNotification] Entering JobCompleted Notification
+[2026-11-05 05:51:47Z INFO JobNotification] Entering EndMonitor
+[2026-11-05 05:51:47Z INFO Runner] Deleting Runner Session...
+[2026-11-05 05:51:49Z INFO Listener] Runner execution been cancelled.

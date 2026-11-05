@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 24,
+  "agentName": "LAPTOP-8RGQ3BAE",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus26.actions.githubusercontent.com/T9gQD0gG7AGumaZDeO5am16gyhj5D3cqQI0y80a1SDgZMn5e4z/",
+  "gitHubUrl": "https://github.com/kaylordfortu-afk/CICD_dockerCabral",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}
