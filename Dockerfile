@@ -1,20 +1,47 @@
-# Use Node.js v20 as the base image
-FROM node:20
 
-# Set the working directory inside the container
+# Stage 1: Build the Ionic Vue application
+FROM node:22-alpine AS builder
+
 WORKDIR /app
 
-# Copy the package files to the working directory
+# Copy package files first
 COPY package*.json ./
 
-# Install application dependencies
-RUN npm install
+# Install dependencies
+RUN if [ -f package-lock.json ]; then npm ci; else npm install; fi
 
-# Copy the remaining application files
+# Copy the rest of the project
 COPY . .
 
-# Document the port the app runs on
-EXPOSE 3000
+# Build the web application
+RUN npm run build
 
-# Start the application
-CMD ["npm", "start", "ionic", "serve", "--host", "0.0.0.0", "--port", "3000", "--no-open"]
+# Detect common Angular and Ionic build output folders
+RUN set -eux; \
+    mkdir -p /output; \
+    if [ -f www/index.html ]; then \
+      cp -a www/. /output/; \
+    elif [ -f dist/index.html ]; then \
+      cp -a dist/. /output/; \
+    else \
+      FOUND=""; \
+      for f in dist/*/browser/index.html dist/*/index.html; do \
+        if [ -f "$f" ]; then FOUND="$f"; break; fi; \
+      done; \
+      if [ -z "$FOUND" ]; then \
+        echo "ERROR: Could not find index.html after build"; \
+        exit 1; \
+      fi; \
+      DIR="${FOUND%/index.html}"; \
+      cp -a "$DIR"/. /output/; \
+    fi
+
+# Stage 2: Serve the built web app
+FROM nginx:alpine AS runner
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /output/ /usr/share/nginx/html/
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]

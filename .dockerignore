@@ -1,7 +1,12 @@
-node.modules
-.git
-.angular
+node_modules
 dist
 www
-converge
+.angular
+.git
+.vscode
+coverage
+*.log
 .env
+.env.*
+!.env.example
+
